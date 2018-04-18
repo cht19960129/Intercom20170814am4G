@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:id="@+id/mainLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="left|top"
+            android:paddingTop="20dp">
+            <TextView
+                android:id="@+id/tx_version"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textSize="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="版本"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="fill_parent"
+                android:id="@+id/ed_status"
+                android:layout_height="wrap_content"
+                android:text="@string/app_init"
+                android:gravity="center_horizontal"
+                android:textSize="30dp" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:maxHeight="250dp"
+            android:maxWidth="250dp"
+            android:id="@+id/Photo"
+            android:onClick="onBtnCall"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
